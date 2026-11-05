@@ -79,12 +79,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link href="assets/css/primeitworld-style.css" id="primeitworld-style-css" media="all" rel="stylesheet"/>
 <link href="assets/css/style.css" id="main-style-css" media="all" rel="stylesheet"/>
 <script id="jquery-core-js" src="assets/js/jquery.min.js"></script>
-
-
 <link href="#" rel="EditURI" title="RSD" type="application/rsd+xml"/>
 <meta content="WordPress 7.1.4" name="generator"/>
 <link href="#" rel="shortlink"/>
-
 <style type="text/css">
 		.ajax-calendar{
 			position:relative;
@@ -137,7 +134,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		}
 
 	</style>
-
 <style type="text/css">
 		.ajax-calendar{
 			position:relative;
@@ -3489,16 +3485,13 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, small, select, button, input {
 </div>
 </footer>
 </div><!-- DSBD_site_wrap -->
-
 <div id="fb-root"></div>
-
 <script id="html2canvas-js-js" src="//cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js?ver=1.0.0"></script>
 <script id="wp-polls-js-extra">
 var pollsL10n = {"ajax_url":"#","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
 //# sourceURL=wp-polls-js-extra
 </script>
 <script id="wp-polls-js" src="assets/js/polls-js.js"></script>
-
 <script id="primeitworld-bootstrap-js" src="assets/js/bootstrap.min.js"></script>
 <script id="primeitworld-wow-js" src="assets/js/wow.min.js"></script>
 <script id="sticky-sidebar-js" src="assets/js/jquery.sticky-sidebar.js"></script>
@@ -3507,10 +3500,8 @@ var pollsL10n = {"ajax_url":"#","text_wait":"Your last request is still being pr
 <script id="primeitworld-lazyload-js" src="assets/js/lazyload.min.js"></script>
 <script id="primeitworld-slick-js" src="assets/js/slick.min.js"></script>
 <script id="primeitworld-js-js" src="assets/js/primeitworld-js.js"></script>
-
-
 <script>
-// Real-time Bangla Date & Interactive Logic for DSBD newspaper 1
+// Real-time Bangla Date & District Filter for DSBD newspaper 1
 document.addEventListener("DOMContentLoaded", function () {
     // 1. Calculate live Bengali & Gregorian date in Bengali language
     function getBanglaDate() {
@@ -3528,16 +3519,12 @@ document.addEventListener("DOMContentLoaded", function () {
         var monthName = monthsEn[now.getMonth()];
         var yearNum = toBn(now.getFullYear());
 
-        // Approximate Bangla Calendar Calculation
-        var bnMonths = ['বৈশাখ', 'জ্যৈষ্ঠ', 'আষাঢ়', 'শ্রাবণ', 'ভাদ্র', 'আশ্বিন', 'কার্তিক', 'অগ্রহায়ণ', 'পৌষ', 'মাঘ', 'ফাল্গুন', 'চৈত্র'];
-        // Current approx Bangla month & date
         var m = now.getMonth();
         var d = now.getDate();
         var bnMonth = 'কার্তিক';
         var bnDay = 20;
         var bnYear = 1433;
         
-        // Simple accurate converter for Bangladesh standard Bangla calendar
         if (m === 10) { // November
             bnMonth = d >= 16 ? 'অগ্রহায়ণ' : 'কার্তিক';
             bnDay = d >= 16 ? (d - 15) : (d + 15);
@@ -3581,43 +3568,23 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 3. Search button trigger
+    // Area search button updates area news cards dynamically
     var localBtn = document.querySelector('.local-search-btn');
     if (localBtn) {
         localBtn.addEventListener('click', function (e) {
             e.preventDefault();
             var dVal = distSelect ? distSelect.value : '';
             var divVal = divSelect ? divSelect.value : '';
-            if (!divVal) {
-                alert('অনুগ্রহ করে প্রথমে বিভাগ নির্বাচন করুন।');
-                return;
-            }
-            alert('DSBD newspaper 1 - ' + (dVal ? dVal : divVal) + ' অঞ্চলের সংবাদ প্রদর্শিত হচ্ছে।');
-        });
-    }
-
-    // 4. Video click modal viewer
-    var videoLinks = document.querySelectorAll('.pitw_videoBox a, .popupVideo');
-    videoLinks.forEach(function (v) {
-        v.addEventListener('click', function (e) {
-            e.preventDefault();
-            var title = this.innerText.trim() || 'ভিডিও সংবাদ';
-            alert('DSBD newspaper 1 ভিডিও প্লেয়ার:
-' + title + '
-(ভিডিও স্ট্রিম চালু হচ্ছে...)');
-        });
-    });
-
-    // 5. Poll vote submission
-    var pollBtn = document.querySelector('input[name="vote"], button.poll-btn');
-    if (pollBtn) {
-        pollBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            var selected = document.querySelector('input[name="poll_id"]:checked, input[type="radio"]:checked');
-            if (selected) {
-                alert('আপনার মতামতের জন্য ধন্যবাদ! DSBD newspaper 1 অনলাইন জরিপে আপনার ভোট গৃহীত হয়েছে।');
-            } else {
-                alert('অনুগ্রহ করে একটি বিকল্প নির্বাচন করুন।');
+            var areaName = dVal || divVal || 'ঢাকা';
+            
+            var areaCards = document.querySelectorAll('.pitw_containerBox .newsItem, .pitw_section1Box .newsItem');
+            if (areaCards.length > 0) {
+                areaCards.forEach(function(card, idx) {
+                    var h = card.querySelector('h2, h3, h4');
+                    if (h) {
+                        h.innerHTML = '<span>' + areaName + ' / </span>' + areaName + ' জেলায় সার্বিক উন্নয়ন কার্যক্রম ও আধুনিক কৃষি প্রবৃদ্ধি';
+                    }
+                });
             }
         });
     }
