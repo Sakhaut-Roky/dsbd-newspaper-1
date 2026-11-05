@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="1000" height="200">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e52d27" />
+      <stop offset="100%" stop-color="#b31217" />
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f242e" />
+      <stop offset="100%" stop-color="#11151c" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Left Icon Emblem: Globe + Newspaper Shield -->
+  <g transform="translate(15, 20)">
+    <!-- Red rounded badge -->
+    <rect x="0" y="0" width="155" height="155" rx="32" fill="url(#redGrad)" filter="url(#shadow)"/>
+    <!-- Globe lines -->
+    <circle cx="77.5" cy="77.5" r="54" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.4"/>
+    <ellipse cx="77.5" cy="77.5" rx="26" ry="54" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.5"/>
+    <line x1="23.5" y1="77.5" x2="131.5" y2="77.5" stroke="#ffffff" stroke-width="4" opacity="0.5"/>
+    <line x1="33" y1="50" x2="122" y2="50" stroke="#ffffff" stroke-width="3.5" opacity="0.35"/>
+    <line x1="33" y1="105" x2="122" y2="105" stroke="#ffffff" stroke-width="3.5" opacity="0.35"/>
+    <!-- Folded paper fold accent -->
+    <path d="M 50 115 L 105 115 L 105 50 L 70 50 Z" fill="#ffffff" opacity="0.95"/>
+    <path d="M 60 70 L 95 70 M 60 85 L 95 85 M 60 100 L 85 100" stroke="#b31217" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="50,50 70,50 50,70" fill="#f0a500"/>
+    <!-- Number 1 badge on corner -->
+    <circle cx="135" cy="30" r="22" fill="#008037" stroke="#ffffff" stroke-width="3.5"/>
+    <text x="135" y="38" font-family="'Segoe UI', 'Arial', sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle">1</text>
+  </g>
+
+  <!-- Main DSBD Brand Name -->
+  <g transform="translate(195, 30)">
+    <!-- Main DSBD in English with red color -->
+    <text x="0" y="78" font-family="'Trebuchet MS', 'Arial Black', sans-serif" font-weight="900" font-size="82" fill="url(#redGrad)" letter-spacing="2">DSBD</text>
+    
+    <!-- NEWSPAPER 1 in Dark Elegant Serif/Sans -->
+    <text x="255" y="78" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="64" fill="url(#darkGrad)" letter-spacing="1">NEWSPAPER</text>
+    
+    <!-- Red circle badge with '1' next to Newspaper -->
+    <rect x="715" y="24" width="60" height="60" rx="14" fill="#008037"/>
+    <text x="745" y="68" font-family="'Arial', sans-serif" font-weight="900" font-size="44" fill="#ffffff" text-anchor="middle">1</text>
+    
+    <!-- Bengali Title: ডিএসবিডি নিউজপেপার ১ -->
+    <text x="4" y="122" font-family="'Noto Sans Bengali', 'Nirmala UI', 'SolaimanLipi', sans-serif" font-weight="700" font-size="30" fill="#2f343f" letter-spacing="0.5">ডিএসবিডি নিউজপেপার ১</text>
+    
+    <circle cx="282" cy="113" r="4" fill="#e52d27"/>
+    
+    <!-- Tagline: সত্য ও ন্যায়ের নির্ভীক কণ্ঠস্বর -->
+    <text x="298" y="121" font-family="'Noto Sans Bengali', 'Nirmala UI', 'Kalpurush', sans-serif" font-weight="500" font-size="22" fill="#757575">সত্য ও ন্যায়ের নির্ভীক কণ্ঠস্বর</text>
+    
+    <!-- Sleek bottom underline accent bar -->
+    <rect x="0" y="136" width="775" height="5" rx="2.5" fill="#e52d27"/>
+    <rect x="0" y="136" width="220" height="5" rx="2.5" fill="#008037"/>
+  </g>
+</svg>
