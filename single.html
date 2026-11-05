@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>সংবাদ লোড হচ্ছে... | DSBD newspaper 1</title>
+    <script>
+        (function() {
+            var match = RegExp('[?&]id=([^&]*)').exec(window.location.search);
+            var id = match ? parseInt(decodeURIComponent(match[1]), 10) : 1;
+            if (!id || isNaN(id) || id < 1) id = 1;
+            window.location.replace('news-' + id + '.html');
+        })();
+    </script>
+</head>
+<body style="font-family:sans-serif; text-align:center; padding-top:100px;">
+    <h2>সংবাদ পেজে নিয়ে যাওয়া হচ্ছে...</h2>
+    <p>অপেক্ষা করুন অথবা <a id="directLink" href="news-1.html">এখানে ক্লিক করুন</a></p>
+    <script>
+        var match = RegExp('[?&]id=([^&]*)').exec(window.location.search);
+        var id = match ? parseInt(decodeURIComponent(match[1]), 10) : 1;
+        document.getElementById('directLink').href = 'news-' + (id || 1) + '.html';
+    </script>
+</body>
+</html>

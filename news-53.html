@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মানে আমি চেষ্টা করলাম সব কিছু ভুলে নতুন করে শুরু করতে | DSBD newspaper 1</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    
+    <!-- Meta tags for social sharing -->
+    <meta property="og:title" content="মানে আমি চেষ্টা করলাম সব কিছু ভুলে নতুন করে শুরু করতে | DSBD newspaper 1">
+    <meta property="og:description" content="রাজধানীসহ সারাদেশে সার্বিক উন্নয়ন অগ্রযাত্রায় নতুন মাত্রা যোগ হতে যাচ্ছে। নীতি-নির্ধারকরা জানিয়েছেন, অর্থনৈতিক স্থিতিশীলতা বজায় রাখা এবং সাধারণ মানুষে...">
+    <meta property="og:image" content="assets/images/7.jpg">
+    <meta property="og:type" content="article">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/primeitworld-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, a, span, small, select, button, input {
+            font-family: 'Noto Sans Bengali', 'Hind Siliguri', 'SolaimanLipi', Arial, sans-serif !important;
+        }
+        
+        .pitwHeaderLogo a img {
+            max-height: 85px !important;
+            width: auto !important;
+        }
+        .pitw_footerLogo img {
+            max-height: 75px !important;
+            width: auto !important;
+        }
+        
+        /* Single article styling */
+        .single-article-wrap {
+            padding: 25px 0 50px;
+            background: #fff;
+        }
+        .pitw_breadCrumb {
+            background: #f8f9fa;
+            padding: 12px 18px;
+            border-radius: 6px;
+            margin-bottom: 22px;
+            font-size: 14px;
+            border-left: 4px solid #ac212c;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .pitw_breadCrumb li {
+            display: inline;
+            color: #666;
+        }
+        .pitw_breadCrumb li+li:before {
+            content: " / ";
+            padding: 0 6px;
+            color: #999;
+        }
+        .pitw_breadCrumb a {
+            color: #ac212c;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .pitw_breadCrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .single_sub_title {
+            font-size: 17px;
+            color: #ac212c;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: inline-block;
+            background: rgba(172, 33, 44, 0.08);
+            padding: 3px 12px;
+            border-radius: 4px;
+        }
+        .single-main-title {
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 1.4;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+        
+        .singleHeader {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 12px 0;
+            margin-bottom: 25px;
+        }
+        .singleAuthor {
+            font-size: 15px;
+            font-weight: 700;
+            color: #222;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .singleAuthorDate small {
+            color: #777;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 4px;
+        }
+        
+        /* Social share buttons */
+        .shared-counts-wrap {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        .share-btn-pill {
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: #fff !important;
+            text-decoration: none !important;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .share-btn-pill:hover {
+            opacity: 0.9;
+        }
+        .share-fb { background: #1877f2; }
+        .share-tw { background: #1da1f2; }
+        .share-wa { background: #25d366; }
+        .share-cp { background: #4b5563; }
+        .print-btn { background: #6b7280; }
+        
+        /* Font resize bar */
+        .font-resize-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 22px;
+            padding: 8px 14px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .font-btn {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 3px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.2s;
+        }
+        .font-btn:hover {
+            background: #ac212c;
+            color: #fff;
+            border-color: #ac212c;
+        }
+        
+        .singleMainImage {
+            margin-bottom: 25px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #f8f8f8;
+            border: 1px solid #eee;
+        }
+        .singleMainImage img {
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            display: block;
+        }
+        .singleImageCaption {
+            padding: 10px 16px;
+            background: #f8f9fa;
+            font-size: 13px;
+            color: #555;
+            font-style: italic;
+            margin: 0;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Article body text */
+        .singleDetails {
+            font-size: 19px;
+            line-height: 1.85;
+            color: #222;
+            margin-bottom: 35px;
+        }
+        .singleDetails p {
+            margin-bottom: 22px;
+            text-align: justify;
+        }
+        
+        /* Related stories */
+        .related-news-section {
+            border-top: 2px solid #ac212c;
+            padding-top: 25px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .related-heading {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ac212c;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .related-card {
+            background: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            overflow: hidden;
+            text-decoration: none !important;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .related-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .related-thumb-wrap {
+            position: relative;
+            height: 140px;
+            overflow: hidden;
+        }
+        .related-thumb-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .related-card:hover .related-thumb-wrap img {
+            transform: scale(1.05);
+        }
+        .related-badge {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background: #ac212c;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+        .related-card h4 {
+            font-size: 15px;
+            font-weight: 700;
+            padding: 12px;
+            margin: 0;
+            color: #222;
+            line-height: 1.45;
+        }
+        .related-card:hover h4 {
+            color: #ac212c;
+        }
+        
+        /* Comments section */
+        .comments-section {
+            background: #fafbfc;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+        .comments-section h3 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .comment-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            font-family: inherit;
+            font-size: 15px;
+        }
+        .comment-form-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .comment-form-row input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+        .comment-btn {
+            background: #ac212c;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .comment-btn:hover {
+            background: #8e151f;
+        }
+        
+        .comment-item {
+            background: #fff;
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            border-left: 4px solid #ac212c;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        .comment-item strong {
+            color: #111;
+            font-size: 14px;
+        }
+        .comment-item small {
+            color: #888;
+            margin-left: 8px;
+            font-size: 12px;
+        }
+        .comment-item p {
+            margin: 6px 0 0;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* Sidebar styling */
+        .sidebar {
+            padding-left: 15px;
+        }
+        .sidebar-widget {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+            padding: 18px;
+            margin-bottom: 25px;
+        }
+        .sidebar-widget-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: #ac212c;
+            border-bottom: 2px solid #ac212c;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .sidebar-news-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-news-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .sidebar-news-item:last-child {
+            border-bottom: none;
+        }
+        .sidebar-news-item a {
+            text-decoration: none;
+            color: #222;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .sidebar-news-item a:hover h5 {
+            color: #ac212c;
+        }
+        .sidebar-news-item img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+        .sidebar-news-info {
+            flex: 1;
+        }
+        .sidebar-cat-tag {
+            font-size: 11px;
+            color: #ac212c;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 3px;
+        }
+        .sidebar-news-info h5 {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.4;
+            color: #222;
+            transition: color 0.2s;
+        }
+    </style>
+</head>
+<body class="single single-post">
+    <div class="PrimeItWorld_siteWrap">
+        <div id="mySearch">
+<form action="#" method="get" role="search">
+<input name="post_type" type="hidden" value="post"/>
+<div class="d-flex justify-content-between mb-2">
+<span class="d-inline-block text-white text-uppercase">খুঁজুন</span>
+<div class="text-white" onclick="closeSearch()"><i class="fa fa-times"></i></div>
+</div>
+<div class="d-flex">
+<input class="col" name="s" placeholder="অনুসন্ধান করুন.." required="" type="text"/>
+<button class="text-white text-uppercase px-3 py-2" type="submit"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div>
+        <header class="PrimeItWorld_header">
+<!-- <div style="width: 100%;height: 7px;background: #2f343f;"></div> -->
+<div class="pitw_headerTop">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-2 col-sm-4">
+<div class="headerIcon d-flex align-items-center">
+<div class="headerMenuBtn hamburger" id="headerMenuBtn" onclick="openNav()">
+<i class="fa fa-bars"></i>
+</div>
+<div class="headerSearchBox d-none d-md-block">
+<form action="#" id="search-box" method="get" role="search">
+<input name="post_type" type="hidden" value="post"/>
+<div class="search-btn d-flex">
+<i class="demo-icon icon-search fa fa-search"></i>
+<i class="demo-icon icon-cancel fa fa-times"></i>
+</div>
+<label class="search-label" for="search">
+<input id="search" name="s" placeholder="অনুসন্ধান করুন.." required="true" type="text"/>
+<button class="go-btn" type="submit"><i class="fa fa-search"></i></button>
+</label>
+</form>
+</div>
+</div>
+<div class="pitwHeaderDate d-none d-md-block">
+<small class="TopDate">বৃহস্পতিবার, ৫ নভেম্বর, ২০২৬,  ২০ কার্তিক, ১৪৩৩</small>
+</div>
+</div>
+<div class="col-8 col-sm-4">
+<div class="pitwHeaderLogo text-center">
+<a href="index.html"><img alt="DSBD newspaper 1" src="assets/images/dsbd-logo.png" style="max-width: 95%; max-height: 80px; width: auto;" title="DSBD newspaper 1"/></a>
+</div>
+</div>
+<div class="col-2 col-sm-4">
+<div class="pitwHeaderRight">
+<div class="mobileSearch text-end d-md-block d-md-none" onclick="openSearch()"><i class="fa fa-search"></i></div>
+<div class="pitwTopSocial d-none d-md-block text-end">
+<ul>
+<li><a href="https://facebook.com/" rel="noopener noreferrer" target="_blank" title="Facebook"><i class="lab la-facebook-f"></i></a></li><li><a href="https://twitter.com/" rel="noopener noreferrer" target="_blank" title="Twitter"><i class="lab la-twitter"></i></a></li><li><a href="https://instagram.com/" rel="noopener noreferrer" target="_blank" title="instagram"><i class="lab la-instagram"></i></a></li><li><a href="" rel="noopener noreferrer" target="_blank" title="youtube"><i class="lab la-youtube"></i></a></li><li><a href="" rel="noopener noreferrer" target="_blank" title="RSS"><i class="las la-rss"></i></a></li> </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+        <nav class="PrimeItWorld_nav main-nav-wrap">
+<div class="container d-flex notob-regular justify-content-between"><ul class="main-nav" id="menu-main-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-536" id="menu-item-536"><a aria-current="page" href="#">প্রচ্ছদ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576" id="menu-item-576"><a href="#sec-national">সর্বশেষ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-548" id="menu-item-548"><a href="#sec-national">জাতীয়</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-549" id="menu-item-549"><a href="#sec-politics">রাজনীতি</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-550" id="menu-item-550"><a href="#sec-international">আন্তর্জাতিক</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-701" id="menu-item-701"><a href="#sec-countrywide">সারাদেশ</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-539" id="menu-item-539"><a href="#sec-local">জেলার খবর</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578" id="menu-item-578"><a href="#sec-national">অর্থনীতি</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-551" id="menu-item-551"><a href="#sec-sports">খেলাধুলা</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-553" id="menu-item-553"><a href="#sec-sports">ক্রিকেট</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-554" id="menu-item-554"><a href="#sec-sports">ফুটবল</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-552" id="menu-item-552"><a href="#sec-sports">অন্যান্য</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-555" id="menu-item-555"><a href="#sec-entertainment">বিনোদন</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-559" id="menu-item-559"><a href="#sec-entertainment">হলিউড</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-558" id="menu-item-558"><a href="#sec-entertainment">বলিউড</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-557" id="menu-item-557"><a href="#">ঢালিউড</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-556" id="menu-item-556"><a href="#sec-sports">অন্যান্য</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-599" id="menu-item-599"><a href="#">ফিচার</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-600" id="menu-item-600"><a href="#">ফিচার</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-582" id="menu-item-582"><a href="#sec-horoscope">লাইফস্টাইল</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-581" id="menu-item-581"><a href="#sec-tech">তথ্যপ্রযুক্তি</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-583" id="menu-item-583"><a href="#sec-education">শিক্ষা</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-579" id="menu-item-579"><a href="#">ধর্ম</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-580" id="menu-item-580"><a href="#">প্রবাস</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-584" id="menu-item-584"><a href="#sec-sports">অন্যান্য</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-585" id="menu-item-585"><a href="#">অপরাধ-দুর্নীতি</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-586" id="menu-item-586"><a href="#">আইন-আদালত</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-589" id="menu-item-589"><a href="#">গণমাধ্যম</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592" id="menu-item-592"><a href="#">নারী ও শিশু</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-593" id="menu-item-593"><a href="#sec-editorial">মতামত</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-594" id="menu-item-594"><a href="#">ফেসবুক কর্নার</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-596" id="menu-item-596"><a href="#">রাজধানী</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-597" id="menu-item-597"><a href="#">সম্পাদকীয়</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-598" id="menu-item-598"><a href="#sec-health">স্বাস্থ্য-চিকিৎসা</a></li>
+</ul>
+</li>
+</ul></div> </nav>
+        <div class="hamburger-container" id="PrimeItWorlSidebar">
+<div class="pitw_sbhead">
+<a class="closeBtn" href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times"></i></a>
+<a class="pitwSidebarLogo" href="#" title="">
+<img alt="DSBD newspaper 1" src="assets/images/dsbd-logo.png" title="DSBD newspaper 1"/>
+</a>
+</div>
+<div class="pitw_sbbody">
+<div class="pitw_sbnavWrap"><ul class="pitw_sbnav" id="menu-sidebar-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item" id="menu-item-604"><a href="#">প্রচ্ছদ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-640"><a href="#">সর্বশেষ সংবাদ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-618"><a href="#sec-national">জাতীয়</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-634"><a href="#sec-politics">রাজনীতি</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-609"><a href="#sec-international">আন্তর্জাতিক</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-has-children" id="menu-item-700"><a href="#sec-countrywide">সারাদেশ</a><span></span>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-639"><a href="#sec-local">জেলার খবর</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-has-children" id="menu-item-612"><a href="#sec-sports">খেলাধুলা</a><span></span>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-614"><a href="#sec-sports">ক্রিকেট</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-615"><a href="#sec-sports">ফুটবল</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-613"><a href="#sec-sports">অন্যান্য</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-has-children" id="menu-item-628"><a href="#sec-entertainment">বিনোদন</a><span></span>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-631"><a href="#sec-entertainment">বলিউড</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-632"><a href="#sec-entertainment">হলিউড</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-630"><a href="#">ঢালিউড</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-629"><a href="#sec-sports">অন্যান্য</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-606"><a href="#">অপরাধ-দুর্নীতি</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-607"><a href="#sec-national">অর্থনীতি</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-608"><a href="#">আইন-আদালত</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-616"><a href="#">গণমাধ্যম</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-617"><a href="#">জনদুর্ভোগ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-619"><a href="#sec-tech">তথ্যপ্রযুক্তি</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-621"><a href="#">ধর্ম</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-622"><a href="#">নারী ও শিশু</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-623"><a href="#sec-editorial">মতামত</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-624"><a href="#">প্রবাস</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-625"><a href="#">ফিচার</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-626"><a href="#">ফেসবুক কর্নার</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-627"><a href="#">বন ও পরিবেশ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-633"><a href="#">রাজধানী</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-635"><a href="#sec-horoscope">লাইফস্টাইল</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-636"><a href="#sec-education">শিক্ষা</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-637"><a href="#">সম্পাদকীয়</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category" id="menu-item-638"><a href="#sec-health">স্বাস্থ্য-চিকিৎসা</a></li>
+</ul></div> <div class="followus pb-3 pt-3">
+<div class="hbsiconbox">
+<a href="https://facebook.com/" rel="noopener noreferrer" target="_blank" title="Facebook"><i class="lab la-facebook-f"></i></a><a href="https://twitter.com/" rel="noopener noreferrer" target="_blank" title="Twitter"><i class="lab la-twitter"></i></a><a href="https://instagram.com/" rel="noopener noreferrer" target="_blank" title="instagram"><i class="lab la-instagram"></i></a><a href="" rel="noopener noreferrer" target="_blank" title="youtube"><i class="lab la-youtube"></i></a><a href="" rel="noopener noreferrer" target="_blank" title="RSS"><i class="las la-rss"></i></a> </div>
+</div>
+<div class="btmlinks"><ul class="" id="menu-footer-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-496" id="menu-item-496"><a href="#">আমাদের সম্পর্কে</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-495" id="menu-item-495"><a href="#">আমাদের পরিবার</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-497" id="menu-item-497"><a href="#">যোগাযোগ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1021" id="menu-item-1021"><a href="#">সংবাদ পাঠান</a></li>
+<li class="menu-item menu-item-type-post_type_archive menu-item-object-photo menu-item-707" id="menu-item-707"><a href="#sec-photo">ফটোগ্যালারী</a></li>
+<li class="menu-item menu-item-type-post_type_archive menu-item-object-video menu-item-708" id="menu-item-708"><a href="#">ভিডিও গ্যালারী</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1007" id="menu-item-1007"><a href="#">বাংলা কনভার্টার</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1008" id="menu-item-1008"><a href="#">আর্কাইভ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-796" id="menu-item-796"><a href="#" rel="privacy-policy">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-797" id="menu-item-797"><a href="#">Terms of Use</a></li>
+</ul></div> </div>
+</div>
+        
+        <!-- Main Single News Container -->
+        <main class="PrimeItWorld_main">
+            <div class="single-article-wrap">
+                <div class="container">
+                    <div class="row">
+                        <!-- Left Main News Content (8 cols) -->
+                        <div class="col-lg-8 col-md-12 main-content">
+                            <!-- Breadcrumbs -->
+                            <ol class="breadcrumb pitw_breadCrumb">
+                                <li><a href="index.html"><i class="fa fa-home"></i> প্রচ্ছদ</a></li>
+                                <li><a href="index.html">DSBD সংবাদ</a></li>
+                                <li class="active">মানে আমি চেষ্টা করলাম সব কিছু ভুলে নতুন করে শুরু করতে</li>
+                            </ol>
+                            
+                            <article class="pitw_contentDetails">
+                                <span class="single_sub_title">DSBD সংবাদ উন্নয়ন ও জাতীয় অগ্রযাত্রা বিষয়ক বিশেষ প্রতিবেদন</span>
+                                <h1 class="single-main-title">মানে আমি চেষ্টা করলাম সব কিছু ভুলে নতুন করে শুরু করতে</h1>
+                                
+                                <div class="singleHeader row align-items-center">
+                                    <div class="col-sm-6">
+                                        <div class="singleAuthorDate">
+                                            <div class="singleAuthor"><i class="far fa-user-circle"></i> DSBD অনলাইন ডেস্ক</div>
+                                            <small><i class="far fa-clock"></i> বৃহস্পতিবার, ৫ নভেম্বর ২০২৬, দুপুর ২:১৫</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="shared-counts-wrap">
+                                            <a href="#" class="share-btn-pill share-fb" onclick="shareFb()"><i class="fab fa-facebook-f"></i> ফেসবুক</a>
+                                            <a href="#" class="share-btn-pill share-wa" onclick="shareWa()"><i class="fab fa-whatsapp"></i> হোয়াটসঅ্যাপ</a>
+                                            <button class="share-btn-pill share-cp" onclick="copyLink()"><i class="fas fa-link"></i> কপি</button>
+                                            <button class="share-btn-pill print-btn" onclick="window.print()"><i class="fas fa-print"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Font Resizer -->
+                                <div class="font-resize-bar">
+                                    <span>লেখা ছোট-বড় করুন:</span>
+                                    <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+                                    <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                                    <button class="font-btn" onclick="resetFontSize()">স্বাভাবিক</button>
+                                </div>
+                                
+                                <!-- Featured Image -->
+                                <div class="singleMainImage">
+                                    <img src="assets/images/7.jpg" alt="মানে আমি চেষ্টা করলাম সব কিছু ভুলে নতুন করে শুরু করতে">
+                                    <p class="singleImageCaption">ছবি: মানে আমি চেষ্টা করলাম সব কিছু ভুলে নতুন করে শুরু করতে | DSBD নিউজপেপার ১ ফটো ডেস্ক</p>
+                                </div>
+                                
+                                <!-- Full Article Text -->
+                                <div class="singleDetails" id="articleBody">
+                                    <p>রাজধানীসহ সারাদেশে সার্বিক উন্নয়ন অগ্রযাত্রায় নতুন মাত্রা যোগ হতে যাচ্ছে। নীতি-নির্ধারকরা জানিয়েছেন, অর্থনৈতিক স্থিতিশীলতা বজায় রাখা এবং সাধারণ মানুষের জীবনযাত্রার মানোন্নয়নকে সর্বোচ্চ অগ্রাধিকার দিয়ে নানামুখী কর্মপরিকল্পনা বাস্তবায়ন করা হচ্ছে। সংশ্লিষ্ট খাতের বিশেষজ্ঞরা এই উদ্যোগকে সময়োপযোগী ও টেকসই অর্থনৈতিক বিকাশের জন্য অত্যন্ত ইতিবাচক হিসেবে দেখছেন।</p><p>সরেজমিনে দেখা গেছে, বিভিন্ন সরকারি ও বেসরকারি উন্নয়ন প্রকল্পে আধুনিক প্রযুক্তির ব্যবহার বৃদ্ধি পেয়েছে। এর ফলে কার্যক্রমে স্বচ্ছতা ও গতিশীলতা উভয়েই নিশ্চিত হচ্ছে। কর্মকর্তারা বলছেন, যথাসময়ে প্রকল্পের কাজ শেষ করতে নিয়মিত মনিটরিং এবং সার্বক্ষণিক নজরদারি বাড়ানো হয়েছে।</p><p>অর্থনৈতিক বিশ্লেষকদের মতে, রফতানি বাণিজ্য বৃদ্ধি, প্রবাসী আয় বৃদ্ধি এবং দেশীয় বাজারে পণ্যের সরবরাহ স্বাভাবিক রাখতে বহুমুখী পদক্ষেপ গ্রহণ এখন জরুরি। এ ব্যাপারে নীতি-নির্ধারণী পর্যায় থেকে কার্যকর দিকনির্দেশনা প্রদান করা হয়েছে, যার সুফল অচিরেই দেশের সাধারণ মানুষ প্রত্যক্ষ করবেন।</p><p>নাগরিক সমাজের প্রতিনিধিরা এই পদক্ষেপগুলোকে স্বাগত জানিয়ে বলেছেন, যেকোনো পরিকল্পনা সফল করার পেছনে কঠোর তদারকি ও জনসম্পৃক্ততা জরুরি। দেশের অগ্রযাত্রাকে ত্বরান্বিত করতে সংশ্লিষ্ট সকলকে দায়িত্বশীল ভূমিকা পালনের আহ্বান জানানো হয়েছে।</p>
+                                </div>
+                                
+                                <!-- Bottom Sharing Bar -->
+                                <div style="display:flex; justify-content:space-between; align-items:center; padding:15px; background:#f8f9fa; border-radius:6px; margin-bottom:30px; flex-wrap:wrap; gap:10px; border-left:4px solid #ac212c;">
+                                    <strong style="color:#ac212c;"><i class="fas fa-share-alt"></i> সংবাদটি বন্ধুদের সাথে শেয়ার করুন:</strong>
+                                    <div style="display:flex; gap:8px;">
+                                        <a href="#" class="share-btn-pill share-fb" onclick="shareFb()"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                        <a href="#" class="share-btn-pill share-tw" onclick="shareTw()"><i class="fab fa-twitter"></i> Twitter</a>
+                                        <a href="#" class="share-btn-pill share-wa" onclick="shareWa()"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Related Stories -->
+                                <div class="related-news-section">
+                                    <h3 class="related-heading"><i class="fas fa-newspaper"></i> সম্পর্কিত খবর</h3>
+                                    <div class="related-grid">
+                                        
+        <a href="news-1.html" class="related-card">
+            <div class="related-thumb-wrap">
+                <img src="assets/images/lead-metro.jpg" alt="ঢাকায় আধুনিক যোগাযোগ ব্যবস্থায় নতুন মাইলফলক: মেট্রোরেলের নতুন রুটের অগ্রগতি" loading="lazy">
+                <span class="related-badge">জাতীয়</span>
+            </div>
+            <h4>ঢাকায় আধুনিক যোগাযোগ ব্যবস্থায় নতুন মাইলফলক: মেট্রোরেলের নতুন রুটের অগ্রগতি</h4>
+        </a>
+        
+        <a href="news-2.html" class="related-card">
+            <div class="related-thumb-wrap">
+                <img src="assets/images/tech-1.jpg" alt="দেশে তরুণ প্রজন্মের তৈরি এআই সফটওয়্যার বিশ্ববাজারে সমাদৃত" loading="lazy">
+                <span class="related-badge">প্রযুক্তি</span>
+            </div>
+            <h4>দেশে তরুণ প্রজন্মের তৈরি এআই সফটওয়্যার বিশ্ববাজারে সমাদৃত</h4>
+        </a>
+        
+        <a href="news-3.html" class="related-card">
+            <div class="related-thumb-wrap">
+                <img src="assets/images/education-1.jpg" alt="স্মার্ট বাংলাদেশ বিনির্মাণে প্রাথমিক স্তর থেকেই কোডিং শিক্ষা চালুর উদ্যোগ" loading="lazy">
+                <span class="related-badge">শিক্ষা</span>
+            </div>
+            <h4>স্মার্ট বাংলাদেশ বিনির্মাণে প্রাথমিক স্তর থেকেই কোডিং শিক্ষা চালুর উদ্যোগ</h4>
+        </a>
+        
+                                    </div>
+                                </div>
+                                
+                                <!-- Comment Section -->
+                                <div class="comments-section">
+                                    <h3><i class="far fa-comments"></i> পাঠকদের মন্তব্য</h3>
+                                    <form class="comment-form" onsubmit="postComment(event)">
+                                        <textarea placeholder="সংবাদটি সম্পর্কে আপনার গঠনমূলক মতামত লিখুন..." rows="3" required></textarea>
+                                        <div class="comment-form-row">
+                                            <input type="text" placeholder="আপনার নাম" required>
+                                            <button type="submit" class="comment-btn">মন্তব্য প্রকাশ করুন</button>
+                                        </div>
+                                    </form>
+                                    <div id="commentThread" style="margin-top:20px;">
+                                        <div class="comment-item">
+                                            <strong>কবির আহমেদ</strong> <small>• ২ ঘণ্টা আগে</small>
+                                            <p>খুবই চমৎকার ও তথ্যবহুল প্রতিবেদন। দেশের সার্বিক অগ্রযাত্রায় এরকম ইতিবাচক সংবাদ অনুপ্রেরণা দেয়।</p>
+                                        </div>
+                                        <div class="comment-item">
+                                            <strong>তাসলিমা নাসরিন</strong> <small>• ৪ ঘণ্টা আগে</small>
+                                            <p>DSBD নিউজপেপার ১ এর উপস্থাপনা এবং বস্তুনিষ্ঠ সংবাদের জন্য ধন্যবাদ জানাচ্ছি।</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- Right Sidebar (4 cols) -->
+                        <div class="col-lg-4 col-md-12 sidebar">
+                            <!-- 300x250 Ad Banner -->
+                            <div class="sidebar-widget text-center" style="padding:10px;">
+                                <img src="assets/images/8383425349097707010.gif" alt="বিজ্ঞাপন" style="max-width:100%; height:auto;">
+                            </div>
+                            
+                            <!-- Latest News Widget -->
+                            <div class="sidebar-widget">
+                                <h3 class="sidebar-widget-title"><i class="fas fa-bolt"></i> সর্বশেষ সংবাদ</h3>
+                                <ul class="sidebar-news-list">
+                                    
+        <li class="sidebar-news-item">
+            <a href="news-1.html">
+                <img src="assets/images/lead-metro.jpg" alt="ঢাকায় আধুনিক যোগাযোগ ব্যবস্থায় নতুন মাইলফলক: মেট্রোরেলের নতুন রুটের অগ্রগতি" loading="lazy">
+                <div class="sidebar-news-info">
+                    <span class="sidebar-cat-tag">জাতীয়</span>
+                    <h5>ঢাকায় আধুনিক যোগাযোগ ব্যবস্থায় নতুন মাইলফলক: মেট্রোরেলের নতুন রুটের অগ্রগতি</h5>
+                </div>
+            </a>
+        </li>
+        
+        <li class="sidebar-news-item">
+            <a href="news-2.html">
+                <img src="assets/images/tech-1.jpg" alt="দেশে তরুণ প্রজন্মের তৈরি এআই সফটওয়্যার বিশ্ববাজারে সমাদৃত" loading="lazy">
+                <div class="sidebar-news-info">
+                    <span class="sidebar-cat-tag">প্রযুক্তি</span>
+                    <h5>দেশে তরুণ প্রজন্মের তৈরি এআই সফটওয়্যার বিশ্ববাজারে সমাদৃত</h5>
+                </div>
+            </a>
+        </li>
+        
+        <li class="sidebar-news-item">
+            <a href="news-3.html">
+                <img src="assets/images/education-1.jpg" alt="স্মার্ট বাংলাদেশ বিনির্মাণে প্রাথমিক স্তর থেকেই কোডিং শিক্ষা চালুর উদ্যোগ" loading="lazy">
+                <div class="sidebar-news-info">
+                    <span class="sidebar-cat-tag">শিক্ষা</span>
+                    <h5>স্মার্ট বাংলাদেশ বিনির্মাণে প্রাথমিক স্তর থেকেই কোডিং শিক্ষা চালুর উদ্যোগ</h5>
+                </div>
+            </a>
+        </li>
+        
+        <li class="sidebar-news-item">
+            <a href="news-4.html">
+                <img src="assets/images/economy-1.jpg" alt="চলতি অর্থবছরে রেকর্ড পরিমাণ রেমিট্যান্স পাঠিয়েছেন প্রবাসীরা" loading="lazy">
+                <div class="sidebar-news-info">
+                    <span class="sidebar-cat-tag">অর্থনীতি</span>
+                    <h5>চলতি অর্থবছরে রেকর্ড পরিমাণ রেমিট্যান্স পাঠিয়েছেন প্রবাসীরা</h5>
+                </div>
+            </a>
+        </li>
+        
+        <li class="sidebar-news-item">
+            <a href="news-5.html">
+                <img src="assets/images/international-1.jpg" alt="বিশ্ব জলবায়ু সম্মেলনে ক্ষতিগ্রস্ত দেশগুলোর জন্য বিশেষ সহায়তার দাবি" loading="lazy">
+                <div class="sidebar-news-info">
+                    <span class="sidebar-cat-tag">আন্তর্জাতিক</span>
+                    <h5>বিশ্ব জলবায়ু সম্মেলনে ক্ষতিগ্রস্ত দেশগুলোর জন্য বিশেষ সহায়তার দাবি</h5>
+                </div>
+            </a>
+        </li>
+        
+        <li class="sidebar-news-item">
+            <a href="news-6.html">
+                <img src="assets/images/lead-parliament.jpg" alt="জাতীয় অর্থনৈতিক প্রবৃদ্ধি ও মেগা প্রকল্প বাস্তবায়নে সরকারের নতুন মহাপরিকল্পনা" loading="lazy">
+                <div class="sidebar-news-info">
+                    <span class="sidebar-cat-tag">জাতীয়</span>
+                    <h5>জাতীয় অর্থনৈতিক প্রবৃদ্ধি ও মেগা প্রকল্প বাস্তবায়নে সরকারের নতুন মহাপরিকল্পনা</h5>
+                </div>
+            </a>
+        </li>
+        
+                                </ul>
+                            </div>
+                            
+                            <!-- Another Ad Banner -->
+                            <div class="sidebar-widget text-center" style="padding:10px;">
+                                <img src="assets/images/5342957609171149330.gif" alt="বিজ্ঞাপন" style="max-width:100%; height:auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="dsbd_footer">
+<div class="pitw_scrollTop"><i class="fa fa-2x fa-angle-up"></i></div>
+<div class="pitw_footerTop">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-sm-12 col-md-4">
+<div class="pitw_footerLogo">
+<a href="index.html"><img alt="DSBD newspaper 1" src="assets/images/dsbd-logo.png" title="DSBD newspaper 1"/></a>
+</div>
+</div>
+<div class="col-sm-12 col-md-4">
+<div class="pitw_footerEeditors text-center"><p style="font-weight: 600; font-size: 15px; margin-bottom: 5px; color: #222;">সম্পাদক ও প্রকাশক: <strong>মোঃ জাহিদ হাসান</strong></p><p style="font-size: 14px; margin-bottom: 5px; color: #555;">নির্বাহী সম্পাদক: <strong>তানভীর আহমেদ</strong></p><p style="font-size: 13px; color: #777;">বার্তা সম্পাদক: <strong>কাজী মোস্তফা কামাল</strong></p></div>
+</div>
+<div class="col-sm-12 col-md-4">
+<div class="pitw_footerAddress text-end"><p><i class="fas fa-map-marker-alt"></i> ঢাকা, বাংলাদেশ</p><p><i class="far fa-envelope"></i> info@dsbdnewspaper1.com</p><p><i class="fas fa-phone"></i> +৮৮০ ১৯০৭-৮১৬১৬৪</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pitw_footerBottom">
+<div class="container">
+<div class="footerBottomInner">
+<p class="copyright"><i class="fa fa-copyright"></i> ২০২৬ <a href="index.html" style="font-weight: bold; color: #ac212c; text-decoration: none;">DSBD newspaper 1</a> | সর্বস্বত্ব সংরক্ষিত</p>
+<div class="pitw_footerSocial text-center">
+<ul>
+<li><a href="https://facebook.com/" rel="noopener noreferrer" target="_blank" title="Facebook"><i class="lab la-facebook-f"></i></a></li><li><a href="https://twitter.com/" rel="noopener noreferrer" target="_blank" title="Twitter"><i class="lab la-twitter"></i></a></li><li><a href="https://instagram.com/" rel="noopener noreferrer" target="_blank" title="instagram"><i class="lab la-instagram"></i></a></li><li><a href="" rel="noopener noreferrer" target="_blank" title="youtube"><i class="lab la-youtube"></i></a></li><li><a href="" rel="noopener noreferrer" target="_blank" title="RSS"><i class="las la-rss"></i></a></li> </ul>
+</div>
+<p class="developer"><span>Developed By:</span> <a href="index.html" style="font-weight: 700; color: #fff; text-decoration: none;">DSBD Media &amp; IT</a></p>
+</div>
+</div>
+</div>
+</footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/primeitworld-js.js"></script>
+    
+    <script>
+        // Interactive functions
+        function shareFb() {
+            window.open('https://facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank');
+        }
+        function shareTw() {
+            window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + '&url=' + encodeURIComponent(window.location.href), '_blank');
+        }
+        function shareWa() {
+            window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(document.title + ' - ' + window.location.href), '_blank');
+        }
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href);
+            alert('সংবাদের লিঙ্ক ক্লিপবোর্ডে কপি হয়েছে!');
+        }
+        
+        var baseFontSize = 19;
+        function changeFontSize(delta) {
+            baseFontSize += delta;
+            if (baseFontSize < 14) baseFontSize = 14;
+            if (baseFontSize > 28) baseFontSize = 28;
+            document.getElementById('articleBody').style.fontSize = baseFontSize + 'px';
+        }
+        function resetFontSize() {
+            baseFontSize = 19;
+            document.getElementById('articleBody').style.fontSize = baseFontSize + 'px';
+        }
+        
+        function postComment(e) {
+            e.preventDefault();
+            var form = e.target;
+            var txt = form.querySelector('textarea').value;
+            var name = form.querySelector('input').value || 'পাঠক';
+            var list = document.getElementById('commentThread');
+            
+            var c = document.createElement('div');
+            c.className = 'comment-item';
+            c.innerHTML = '<strong>' + name + '</strong> <small>• এইমাত্র</small><p>' + txt + '</p>';
+            list.prepend(c);
+            form.reset();
+            alert('আপনার মতামত সফলভাবে প্রকাশিত হয়েছে। ধন্যবাদ!');
+        }
+    </script>
+</body>
+</html>
